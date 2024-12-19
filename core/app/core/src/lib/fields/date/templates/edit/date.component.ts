@@ -62,7 +62,7 @@ export class DateEditFieldComponent extends BaseDateComponent implements OnInit,
     }
 
     ngOnInit(): void {
-
+        super.ngOnInit();
         // Note: handle NgbDatePicker default validation
         // Note: convert empty form value to null for the ngb date validator to pass it
         if (isVoid(this.field.value) || isEmptyString(this.field.value)) {
